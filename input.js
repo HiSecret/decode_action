@@ -8,7 +8,6 @@ https://nebula.kuaishou.com/rest/wd/encourage/unionTask/treasureBox/
 @Author: smallfawn
 自己选择打卡奖品后运行
 多变量新建
-
 教程 https://thin-hill-428.notion.site/1acaae1a9ef8802a9a6dce8242a53e45?pvs=4
 
 5 * * * * jd_ksjs.js
