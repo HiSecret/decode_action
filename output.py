@@ -1,139 +1,541 @@
-#2025-09-09 07:17:28
-import json 
-import requests 
-import random 
-import string 
-import time 
-import os 
-def random_str():
- OO0000OOO0O000O00=["辞旧迎新越龙年。","通过辛勤工作获得财富才是人生的大快事。","黄金时代是在我们的前面，而不在我们的后面。","没有了理想，青春之花也便凋谢了。","别人能做到的事，自己也可以做到。","只有忍得住寂寞，才能够见明日的繁华。","给一中最好的回报就是交一份完美的答卷。","人生没有绝对精彩，雨后或许没有彩虹，但后退一步确是失败。","一切真实的感知，都是由汗水和泪水换来的。","当自己想放弃的时就想想当初为什么要坚持。","永远不会有任何人能代替你，这就是遗憾旳滋味。","坚持不懈，持之以恒，奋力拼搏，成就梦想。","志之所趋，无远勿届；志之所向，无坚不摧。","诚心诚意，诚字的另一半就是成功。","死的方式由上帝决定，活的方式由自己决定！","苦于现在，甜与未来，没有克服不了的困难。","被山花野草迷住的人，永远也登不上风光无限，近在眼前的顶峰。","我们的梦想只能看着明天的太阳，路很长，我们只有望向远方。","我们可以自己长得不漂亮，但绝对不能让自己的人生不漂亮。","成功的法则极为简单，但简单并不代表容易。","重要的不是要得到什么，是珍重已经拥有的。","自己的人生自己导演，自己的未来自己创造。","世界上没有绝对幸福圆满的婚姻，幸福只是来自于无限的容忍与互相尊重。","青春是使用意志和拼搏酿成的琼浆。","积极思考造成积极人生，消极思考造成消极人生。","虽然不能变过去，但是可以改变将来。","今日的努力，是为了不再重复痛苦的过去。","还记得最初的梦想吗？那就努力吧。","与其用泪水悔恨昨天，不如用汗水拼搏明天。","既然梦想在远方，那就努力去追赶。","不拼尽最后一丝力气，怎能确定你不行。","宝剑锋从磨砺出，梅花香自苦寒来。在逆境中拼搏，在逆境中奋斗。","我不怕自己努力了不成功，我只怕比我成功的人，比我更努力。","愚者用肉体监视心灵，智者用心灵监视肉体。","只有付出别人不愿付出的努力，才能得到别人的不到的收获。","无情岁月増中减，有味青春苦后甜。集雄心壮志，创锦绣前程。","只有坚持不断努力，才能进步。","步浩然：向竞争挑战，向压力挑战，更要向自己挑战时间就是一切。","珍惜现在的时光，每一天都可能决定你的未来。","空空的口袋不能阻碍你的未来，空空的.脑袋你将永远贫穷。","切莫垂头丧气，即使失去了一切，你还握有未来。","你想成为哪类人，并不取决于你的能力，而是取决于你的选择。","目标不是超过别人，是超过自己。想要得到的不是成绩而是知识。","学习如一粒种子，只有努力播种才会有收获。","卓越的人一大优点是：在不利与艰难的遭遇里百折不挠。","只要一个人还有追求，他就没有老；直到后悔取代了梦想，一个人才算老。","任何一种处境，无论是好是坏，都受到我们对待处境的态度的影响。","滴水能把石穿透，万事功到自然成。努力吧。","只求在多年后的今天回想今日，不要留下遗憾。","先飞的都不是笨鸟，只有笨鸟才不肯先飞。","天道酬勤再现辉煌王者风，闻鸡起舞成就拼搏劲旅师。","如果你曾歌颂黎明，那么也请你拥抱黑夜。","别人怎么对你，你用相同的态度回应就是了；人生，多欲者累，寡欲者安，无欲者刚。","自然界没有风风雨雨，大地就不会春华秋实。","做最好的今天，回顾最好的昨天，迎接最美好的明天。","能把在面前行走的机会抓住的人，十有八九都会成功。","世界是真的，付出都是值得的。","用辛勤的汗水浇灌成功，用智慧的结晶拼搏高考。","即使爬到最高的山上，一次也只能脚踏实地地迈一步。","生活会苦一阵子，但不会苦一辈子。","生活熬过苦难，才有回忆的笑谈。愿你成为自己的太阳，无需凭借谁的光。","比我差的人还没放弃，比我好的人仍在努力，我就更没资格说我无能为力！","有的人生来就不需要任何原谅，因为他们不论有多少次机会都没点改进。","绝大多数人，在绝大多数时候，都只能靠自己。","当你知道你不在是你的时候，你才是真正的你！","充沛的精力加上顽强的决心，曾经创造出许多奇迹。","每一枝玫瑰都有刺正如每个人的性格里都有你不能容忍的部分。","作为祖国的希望，请让我们抛洒血汗奋斗进取，燃烧青春的辉煌，那么有朝一日天鹏展翅冲灵霄之时，回首俯视，我们会因自己奋进过而无怨无悔！","快乐要懂得分享，才能加倍的快乐。","你可以遗憾，但是你绝对不能后悔。遗憾证明你努力过了，只是力有不逮。而后悔，只能说明你当时没努力过。","要记得，无论现在多么痛苦，在未来也一定会有让你开怀大笑的事情在等着。","你只看到我是带刺的仙人掌，却没见过我艳绝人寰的绽放。每一个平凡又普通的我们，没有富贵的出身，也没有傲人的外貌，只能靠自己的努力奋斗在这个残酷的世界上生存下去。但是不要灰心，总有一天我们会像仙人掌一样，怒放生命的绚丽。","人的最高尚行为除了传播真理外，就是公开放弃错误。","每个优秀的人，都有一段沉默的时光。那一段时光，是付出了很多努力，日后说起时，连自己都能被感动的日子。","保护好你的梦想，等到它开花结果的那天，它会让你俯视所有曾经看低你的人。","能让你精致的，除了化妆品，最厉害的是知识、努力和爱。","宁可清贫自乐，不可浊富多忧。","顽强的毅力，改变可以征服世界上任何一座高峰。","选择自己所爱的，爱自己所选择的。","没有了爱的语言，所有的文字都是乏味的。","纠结过去，担心未来，都不如抓住当下。过去是梦，未来是影，现在才是真真切的人生。","命运就像自己的掌纹，虽然弯弯曲曲，却永远掌握在自己手中。","嘴里说的人生，就是自己以后的人生。","我始终相信一句话，只有自己强大，才不会被别人践踏。","不苦不累，生活无味；不拼不搏，等于白活。","不要等待机会，而要创造机会。","生活不可能像你想的那么美好，但也不会像你想的那么糟。","有些人看起来原谅你了，可你已经是陌生人了。","相信自己能力的人，任何事情都能够做到。","励志是给人快乐，激励是给人痛苦。","无论未来的每一天，是什么样子，都是我自己的选择，按照自己的选择来生活，是送给自己最好的礼物。","一份耕耘，份收获，努力越大，收获越多，奋斗！奋斗！奋斗！","生活，匀速的是爱，不匀速则变成一种伤害。","生活中若没有朋友，就像生活中没有阳光一样。","奋斗，是成功路上不可避免的。植物以其可以获得新生。我们如果能真正做到这两字的话，那么祖国的未来会为我们更加强大！","任何一个人，失去了另一个人，都会活得一如既往。","没有退路的时候，正是潜力发挥最大的时候。","感觉活着真好，生死也就是一秒钟的事，一件事，想通了是天堂，想不通就是地狱。既然活着，就要好好活着。","最热烈的火焰，冰封在最沉默的火山深处。","人生便是一只风筝，只有努力向上飞的那只，才能成为天之骄子。",]
- OOOOOOOOO00O00O00=[OOO0OOO000O0O0OO0[:-1]for OOO0OOO000O0O0OO0 in OO0000OOO0O000O00]
- return random.choice(OOOOOOOOO00O00O00)
-def generate_random_id():
- O0O000OO0O0OO0O0O=''.join(random.choices(string.ascii_uppercase,k=6))
- OO0O00O0OO0OO00O0=int(time.time()*1000)
- O00OO0O0OO0O0O00O=O0O000OO0O0OO0O0O+str(OO0O00O0OO0OO00O0)
- return O00OO0O0OO0O0O00O 
-def get_task_list(O00OO00O00O0O00O0):
- OO0OO000OOO0OO0O0={"service":"media","api":"spreadActivity/getAppUserSpreadActivity","data":{"content":"null"},"userDevice":{"os":"9","deviceBrand":"Xiaomi","deviceId":"539d3978e1ece976","equipmentId":"539d3978e1ece976","deviceType":"Xiaomi MI 6","device":"android","clientVersion":"5.0.1"},"traceId":f"{generate_random_id()}","token":f"{O00OO00O00O0O00O0}"}
- OOO00O0000O00O00O={"Accept":"application/json","Accept-Language":"zh-cn","Connection":"Keep-Alive","Content-Length":str(len(OO0OO000OOO0OO0O0)),"Content-Type":"application/json; Charset=UTF-8","Host":"app.eyh.cn","Referer":"https://app.eyh.cn/gateway/api","User-Agent":"okhttp/5.0.0-alpha.2"}
- OO0OO000OOO0OO0O0=json.dumps(OO0OO000OOO0OO0O0)
- O0O000000O00OO000=requests.post(url=url,headers=OOO00O0000O00O00O,data=OO0OO000OOO0OO0O0)
- if O0O000000O00OO000.status_code==200:
-  O0O000000O00OO000=O0O000000O00OO000.json()
-  O0000O000000O0000=[]
-  for OO000O00OO00OO000 in O0O000000O00OO000['data']['spreadArticleVoList']:
-   print(OO000O00OO00OO000['articleId'])
-   O0000O000000O0000.append(OO000O00OO00OO000['articleId'])
-  print(f"一共有 【{len(O0000O000000O0000)}】个任务")
-  return O0000O000000O0000 
- else:
-  print(O0O000000O00OO000.text)
-def complete_comment_task(O00OO0OOO0O0O0OOO,O0000OO0O0OO0OO00):
- O00000OO0O00O00O0={"service":"media","api":"article/saveComment","data":{"articleId":int(O00OO0OOO0O0O0OOO),"content":f"{random_str()}","isSpreadActivity":"1"},"userDevice":{"os":"9","deviceBrand":"Xiaomi","deviceId":"539d3978e1ece976","equipmentId":"539d3978e1ece976","deviceType":"Xiaomi MI 6","device":"android","clientVersion":"5.0.1"},"traceId":f"{generate_random_id()}","token":f"{O0000OO0O0OO0OO00}"}
- O00000OO0O00O00O0=json.dumps(O00000OO0O00O00O0).encode("utf-8")
- O00O0O0O0OO00O0O0={"Content-Type":"application/json; charset=utf-8","Content-Length":str(len(O00000OO0O00O00O0)),"Host":"app.eyh.cn","Connection":"Keep-Alive","Accept-Encoding":"gzip","User-Agent":"okhttp/5.0.0-alpha.2"}
- OOO000O00000O0000={OO00OOO0OO000OO0O:OO000O00O0O0O0O0O.encode('utf-8')for OO00OOO0OO000OO0O,OO000O00O0O0O0O0O in O00O0O0O0OO00O0O0.items()}
- O00O0000O0OOOOOOO=requests.post(url=url,headers=OOO000O00000O0000,data=O00000OO0O00O00O0)
- if O00O0000O0OOOOOOO.status_code==200:
-  print("评论完成")
-def complete_like_task(O0OO000O000O00OOO,O000000OOO00O00OO):
- OOO0O0000O00OOO0O={"service":"media","api":"article/savePraiseLog","data":{"articleId":int(O0OO000O000O00OOO),"isSpreadActivity":"1","content":"null"},"userDevice":{"os":"9","deviceBrand":"Xiaomi","deviceId":"539d3978e1ece976","equipmentId":"539d3978e1ece976","deviceType":"Xiaomi MI 6","device":"android","clientVersion":"5.0.1"},"traceId":f"{generate_random_id()}","token":f"{O000000OOO00O00OO}"}
- OO0O0OOOO0OOOOOOO={"Accept":"application/json","Accept-Language":"zh-cn","Connection":"Keep-Alive","Content-Length":str(len(OOO0O0000O00OOO0O)),"Content-Type":"application/json; Charset=UTF-8","Host":"app.eyh.cn","Referer":"https://app.eyh.cn/gateway"}
- OO0O0O0O0O0OO0000=requests.post(url=url,headers=OO0O0OOOO0OOOOOOO,data=json.dumps(OOO0O0000O00OOO0O))
- if OO0O0O0O0O0OO0000.status_code==200:
-  print(OO0O0O0O0O0OO0000.json())
-def complete_read_task(OOO0OOOOO000O000O,O0OO00O0000O0O0O0):
- O00OO00OOOO000000={"service":"media","api":"column/readArticle","data":{"articleId":int(OOO0OOOOO000O000O),"isSpreadActivity":"1","content":"null"},"userDevice":{"os":"9","deviceBrand":"Xiaomi","deviceId":"539d3978e1ece976","equipmentId":"539d3978e1ece976","deviceType":"Xiaomi MI 6","device":"android","clientVersion":"5.0.1"},"traceId":f"{generate_random_id()}","token":f"{O0OO00O0000O0O0O0}"}
- OO0000O0OOOO00000={"Accept":"application/json","Connection":"Keep-Alive","Content-Length":str(len(O00OO00OOOO000000)),"Content-Type":"application/json; Charset=UTF-8","Host":"app.eyh.cn","Referer":"https://app.eyh.cn/gateway/api","User-Agent":"okhttp/5.0.0-alpha.2"}
- OO000O00OOOOOOOOO=requests.post(url,headers=OO0000O0OOOO00000,data=json.dumps(O00OO00OOOO000000))
- if OO000O00OOOOOOOOO.status_code==200:
-  print(OO000O00OOOOOOOOO.json())
-def complete_share_task(O00O00OO00O00OO0O,OOOOO0OO0O00OOOOO):
- OO0O0OOO00OOO00OO={"Accept":"application/json","Accept-Language":"zh-cn","Connection":"Keep-Alive","Content-Length":"372","Content-Type":"application/json; Charset=UTF-8","Host":"app.eyh.cn","Referer":"https://app.eyh.cn/gateway/api","User-Agent":"okhttp/5.0.0-alpha.2"}
- O0O00OOOOOO000OO0={"service":"media","api":"article/saveShareLog","data":{"articleId":int(O00O00OO00O00OO0O),"isSpreadActivity":"1","content":"null"},"userDevice":{"os":"9","deviceBrand":"Xiaomi","deviceId":"539d3978e1ece976","equipmentId":"539d3978e1ece976","deviceType":"Xiaomi MI 6","device":"android","clientVersion":"5.0.1"},"traceId":f"{generate_random_id()}","token":f"{OOOOO0OO0O00OOOOO}"}
- OO00OO0O00O00OO00=requests.post(url,headers=OO0O0OOO00OOO00OO,data=json.dumps(O0O00OOOOOO000OO0))
- if OO00OO0O00O00OO00.status_code==200:
-  print(OO00OO0O00O00OO00.json())
-def lottery_draw(O000OOO00OO000O0O):
- OOO0OO0000OO0000O={"Accept":"application/json","Accept-Language":"zh-cn","Connection":"Keep-Alive","Content-Length":"380","Content-Type":"application/json; Charset=UTF-8","Host":"app.eyh.cn","Referer":"https://app.eyh.cn/gateway/api","User-Agent":"okhttp/5.0.0-alpha.2"}
- OO00OOOO0OO0OOO00={"service":"media","api":"lottery/lotteryActivityAward","data":{"uid":"30a7f9016d224fc2a8367200cbbab62a","content":"null"},"userDevice":{"os":"9","deviceBrand":"Xiaomi","deviceId":"539d3978e1ece976","equipmentId":"539d3978e1ece976","deviceType":"Xiaomi MI 6","device":"android","clientVersion":"5.0.1"},"traceId":f"{generate_random_id()}","token":f"{O000OOO00OO000O0O}"}
- for OOO000O0OO00OOOO0 in range(0,3):
-  print(f"第{OOO000O0OO00OOOO0+1}次抽奖")
-  O00OO0O0O000OO00O=requests.post(url,headers=OOO0OO0000OO0000O,data=json.dumps(OO00OOOO0OO0OOO00))
-  if O00OO0O0O000OO00O.status_code==200:
-   O00OO0O0O000OO00O=O00OO0O0O000OO00O.json()
-   if '已用完'in O00OO0O0O000OO00O['message']:
-    print(O00OO0O0O000OO00O)
-    break 
-   else:
+#2025-09-24 02:45:36
+"""
+📖 小阅阅_V5.5   ♻20250813   
+
+✅ 新增：支持多渠道推送，请在青龙配置文件 config.sh 中添加必要的推送参数，并将变量中的token参数设置为000(详见下方参数说明)。(建议使用脚本自带pushplus推送，更稳定)。
+✅ 完善检测文章。
+✅ 修改bug，完善多渠道推送。
+
+🔔阅读赚金币，金币可提现，每天1—2元，本脚本自动推送检测文章到微信，需要用户手动阅读过检测，过检测后脚本自动完成剩余任务，不需要下载app，在微信打开下方链接即可进入到活动页。(打开活动页时请无视微信的安全提示)
+
+👉活动入口 微信打开：http://2121430.k4f1.sanming0.cn/yyiyase/f56fb7c54f55edd1b77d23b3577da92b?ukd=88     备用链接：https://tinyurl.com/5t3yhsfm     https://tinyurl.com/2tc96zpc    最新地址获取：https://tinyurl.com/27y64eve
+
+👉建议将链接添加至微信收藏(微信_我_收藏_⊕_粘贴)，并添加到悬浮窗，方便进入活动主页。
+
+⚠️进入后点击永久入口，保存二维码，当链接失效时扫码获取最新链接！
+
+⚠️本脚本会通过(pushplus推送加或其他渠道)发送检测文章到用户手机过检测。为什么要读检测文章？因为活动方要通过个别检测文章阅读数的增加来判断用户阅读的有效性，所以必须真机阅读，脚本的模拟阅读不会增加阅读数。每个账号每天180篇中可能有3篇左右的检测文章。
+
+⚠️用于阅读检测文章的微信号，每天运行脚本前务必从公众号(订阅号)阅读两篇文章，否则可能会触发微信风控，导致阅读无效过检测失败。禁止用真机+自动点击器阅读，否则同样触发微信风控，导致阅读无效。(当触发微信风控导致阅读无效后可能要几周或几个月解封，期间可以将检测文章推送至其他微信号过检测)
+
+⚠️收到消息不弹窗？在pushplus回复“激活消息”将在48小时内连续5条消息以“客服消息”形式发送，此时可以收到微信弹窗提醒，否则将以“模板消息”形式发送消息，此时只有在微信主页或pushplus主页才能收到消息提醒。(详情点击“激活消息有什么用？”)。🔔当收到5条(客服消息)形式弹窗后重新发送“激活消息”可再次激活(客服消息)。
+
+⚠️如微信没有接收到检测文章消息或消息延迟，可以把链接粘贴到微信的“文件传输助手”或“收藏”再点击阅读!
+
+❗❗❗重要提示：本脚本只限新用户通过上方链接绑定指定id使用，或老用户上级id尾号为4981，其他非受邀用户均不可使用。
+
+❗❗❗期间要时常用真机访问活动主页并阅读，同时每天任务不建议跑满，避免被活动方查出异常封号！
+
+参数：
+1、用“pushplus推送加”接收检测文章，微信公众号关注“pushplus推送加”，点击pushplus进入到官网首页注册实名并激活消息，获取您的token口令填写到变量。
+2、打开抓包软件并用小阅阅读文章，抓出Cookie里的ysmuid和请求体里的unionid，以及请求头中的User-Agent参数。
+3、如果您使用其他平台作为推送渠道请将token参数设置为000，例：5a68xxx&oZdBpxxx&000。如果使用pushplus推送正常填写token参数即可。
+
+变量名：xyy
+变量值：5a68xxxxxxx&oZdBpxxxxxxx&ff2cdxxxxxxx
+
+变量格式：ysmuid & unionid & token
+多账号格式：ysmuid & unionid & token @ ysmuid & unionid & token
+
+多账号：账号1@账号2@账号3
+例：5a68xxx&oZdBpxxx&ff2cdxxx@5a68xxx&oZdBpxxx&ff2cdxxx
+
+变量名: UA  (为请求头中的User-Agent参数)
+变量值：Mozilla/5.0 iPhonexxxxxxx
+
+变量名：xyytx
+变量值：1
+自动提现 1开启 0关闭 (不配置变量默认不自动提现，开启后满5000金币自动提现)
+
+定时:
+自动定时规则cron： 0 7-23/3 * * *   (每天7-23点每3小时一次)，期间注意接收微信通知，阅读检测文章
+手动定时规则cron： 0                手动运行脚本，期间注意接收微信通知，阅读检测文章
+
+更多脚本关注仓库：https://wwgz.lanzoue.com/b0ec064he   密码：2580
+
+本脚本仅供学习交流，请在下载后的24小时内完全删除 请勿用于商业用途或非法目的，否则后果自负。
+"""
+
+import re
+import os
+import json
+import time
+import random
+import requests
+import threading
+from urllib.parse import urljoin
+from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
+from requests.exceptions import RequestException
+from requests.exceptions import ConnectionError, Timeout
+
+# 实时日志
+def log_message(message, flush=False):
+    print(f"{message}", flush=flush)
+
+# 主程序
+def process_account(account, i):
+    max_retries = 1
+    uas = account.split("&")[0][-3:]
+    token = account.split("&")[2]
+    ysmuid, unionid = account.split("&")[:2]
+    # 获取域名 
+    current_url = requests.get("https://www.filesmej.cn/waidomain.php", timeout=5).json()["data"]["luodi"]
+    session = requests.Session()
+    headers = {
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "User-Agent": f"{UA} {uas}",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/wxpic,image/tpg,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "X-Requested-With": "com.tencent.mm",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Cookie": f"ysmuid={ysmuid}"
+    }
+    for _ in range(11):
+        try:
+            parsed = urlparse(current_url)
+            headers["Host"] = parsed.netloc
+            response = session.get(current_url, headers=headers, allow_redirects=False, timeout=10)
+            if response.status_code in (301, 302, 303, 307, 308):
+                current_url = urljoin(current_url, response.headers.get("Location", ""))
+            else:
+                break
+        except (requests.RequestException, requests.exceptions.InvalidURL) as e:
+            print(f"❗重定向错误: {e}", flush=True)
+            break
+        try:
+            parsed_domain = urlparse(current_url).netloc.lstrip("www.")
+        except Exception as e:
+            print(f"❗域名获取失败: {e}", flush=True)
+    # 上级id
+    codeid = lambda: (
+        (match.group(1) if (match := re.compile(r'codeid\s*=\s*"(\d+)"').search(
+            requests.get(
+                f"http://{parsed_domain}/?inviteid=0",
+                headers = {
+                    "Host": f"{parsed_domain}",
+                    "Connection": "keep-alive",
+                    "Upgrade-Insecure-Requests": "1",
+                    "User-Agent": f"{UA} {uas}",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/wxpic,image/tpg,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                    "X-Requested-With": "com.tencent.mm",
+                    "Accept-Encoding": "gzip, deflate",
+                    "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cookie": f"ysmuid={ysmuid}"
+                },
+                timeout=10
+            ).text
+        )) else print(f"❗警告：未找到codeid \n❗检查活动页面是否正常，切勿反复运行", flush=True)) 
+        if not any([
+            print(f"❗网络请求失败: {e}", flush=True) if isinstance(e, requests.RequestException) else
+            print(f"❗正则错误: {e}", flush=True) if isinstance(e, re.error) else
+            print(f"❗未知错误: {e}", flush=True) for e in [Exception][:0]
+        ]) else None
+    )
+    codeid = codeid()
+    # 用户id
+    extract_dynamic_id = lambda: (
+        (match.group(1) if (match := re.compile(r'我的id:(\d+)').search(
+            requests.get(
+                f"http://{parsed_domain}/?inviteid=0",
+                headers = {
+                    "Host": f"{parsed_domain}",
+                    "Connection": "keep-alive",
+                    "Upgrade-Insecure-Requests": "1",
+                    "User-Agent": f"{UA} {uas}",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/wxpic,image/tpg,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                    "X-Requested-With": "com.tencent.mm",
+                    "Accept-Encoding": "gzip, deflate",
+                    "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cookie": f"ysmuid={ysmuid}"
+                },
+                timeout=10
+            ).text
+        )) else print("❗警告：未找到ID", flush=True)) 
+        if not any([
+            print(f"❗网络请求失败: {e}", flush=True) if isinstance(e, requests.RequestException) else
+            print(f"❗正则错误: {e}", flush=True) if isinstance(e, re.error) else
+            print(f"❗未知错误: {e}", flush=True) for e in [Exception][:0]
+        ]) else None
+    )
+    # 开始阅读        
+    print(f"\n{'=' * 10}🔰开始执行账号{i}🔰{'=' * 10}\n", flush=True)
+    exit(print("❗您不是受邀用户，程序终止", flush=True)) if not codeid or int(codeid) not in {693874981} else print("👌 账号验证成功", flush=True)
+    time.sleep(1)
+    url = f"http://{parsed_domain}/yunonline/v1/gold"
+    headers = {
+        "Host": f"{parsed_domain}",
+        "Connection": "keep-alive",
+        "User-Agent": f"{UA} {uas}",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": f"http://{parsed_domain}/",
+        "Accept-Encoding": "gzip, deflate",
+        "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Cookie": f"ysmuid={ysmuid}; ejectCode=1"
+    }
+    params = {
+        "unionid": f"{unionid}",
+        "time": int(time.time() * 1000)
+    }
+    response = requests.get(url, headers=headers, params=params).json()
+    if response["errcode"] == 0:
+        day_gold = response["data"]["day_gold"]
+        day_read = response["data"]["day_read"]
+        last_gold = response["data"]["last_gold"]
+        remain_read = response["data"]["remain_read"]
+        print(f"🙍 ID:{extract_dynamic_id()}", flush=True)
+        print(f"💰 当前金币:{last_gold}\n📖 今日已读:{day_read}  剩余:{remain_read}", flush=True)
+        print("🔔 自动提现已关闭" if money_Withdrawal == 0 else "🔔 自动提现已开启", flush=True)
+        print(f"{'=' * 10}📖开始阅读文章📖{'=' * 10}\n", flush=True)
+        for i in range(33):
+            current_timestamp = int(time.time() * 1000)
+            checkDict = [
+                "MzkzMTYyMDU0OQ==",
+                "Mzk0NDcxMTk2MQ==",
+                "MzkzNTYxOTgyMA==",
+                "MzkzNDYxODY5OA==",
+                "MzkwNzYwNDYyMQ==",
+                "MzkyNjY0MTExOA==",
+                "MzkwMTYwNzcwMw==",
+                "Mzg4NTcwODE1NA==",
+                "MzkyMjYxNzQ2NA==",
+                "Mzk4ODQzNjU1OQ==",
+                "MzkyMTc0MDU5Nw==",
+                "Mzk5MDc1MDQzOQ==",
+                "Mzk4ODQzNzU3NA==",
+            ]
+            time.sleep(1)
+            url = f"http://{parsed_domain}/wtmpdomain2"
+            headers = {
+                "Host": f"{parsed_domain}",
+                "Accept": "application/json, text/javascript, */*; q=0.01",
+                "User-Agent": f"{UA} {uas}",
+                "X-Requested-With": "XMLHttpRequest",
+                "Origin": f"http://{parsed_domain}",
+                "Referer": f"http://{parsed_domain}/?inviteid=0",
+                "Accept-Encoding": "gzip, deflate",
+                "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                "Cookie": f"ysmuid={ysmuid};ejectCode=1"
+            }
+            data = {
+                "unionid": unionid
+            }
+            for retry in range(max_retries):
+                try:
+                    response = requests.post(url, headers=headers, data=data, timeout=7).json()
+                    break
+                except (ConnectionError, Timeout):
+                    if retry < max_retries - 1:
+                        time.sleep(2.5)
+                        continue
+                    else:
+                        print("❗网络异常退出", flush=True)
+                        break
+                except Exception as e:
+                    print(e, flush=True)
+                    if retry < max_retries - 1:
+                        print("❗状态1异常，尝试重新发送请求...", flush=True)
+                        time.sleep(2.5)
+                        continue
+                    else:
+                        print("❗达到最大重试次数，退出", flush=True)
+                        break
+            if response["errcode"] == 0:
+                time.sleep(1)
+                parsed_url = response['data']['domain']
+                url_parts = urlparse(parsed_url)
+                gt = parse_qs(url_parts.query).get('gt', [''])[0]
+                new_url = f"{url_parts.scheme}://{url_parts.netloc}/sdaxeryy?gt={gt}&time={current_timestamp}&psgn=168&vs=120"
+                headers = {
+                    "Host": f"{url_parts.netloc}",
+                    "Connection": "keep-alive",
+                    "User-Agent": f"{UA} {uas}",
+                    "Accept": "application/json, text/javascript, */*; q=0.01",
+                    "X-Requested-With": "XMLHttpRequest",
+                    "Referer": f"{url_parts.scheme}://{url_parts.netloc}/xsysy.html?{url_parts.query}",
+                    "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Accept-Encoding": "gzip, deflate"                             
+                }
+                for retry in range(max_retries):
+                    try:
+                        response = requests.get(new_url, headers=headers, timeout=7).json()
+                        break
+                    except (ConnectionError, Timeout):
+                        if retry < max_retries - 1:
+                            time.sleep(2.5)
+                            continue
+                        else:
+                            print("❗网络异常退出", flush=True)
+                            break
+                    except Exception as e:
+                        print(e, flush=True)
+                        if retry < max_retries - 1:
+                            print("❗状态2异常，尝试重新发送请求...", flush=True)
+                            time.sleep(2.5)
+                            continue
+                        else:
+                            print("❗达到最大重试次数，退出", flush=True)
+                            break
+                if response["errcode"] == 0:
+                    link = response['data']['link']
+                    if link:
+                        biz_match = re.search(r'__biz=([^&]+)', link)
+                        biz = biz_match.group(1) if biz_match else "❗未知来源文章"
+                        sleep = random.randint(8, 25)
+                        delay = random.randint(120, 135)
+                        print(f"✅ 第{int(day_read)+ i + 1}篇文章获取成功---文章来源--- {biz}", flush=True)
+                        print(f"📖 开始阅读: {link}", flush=True)
+                        if biz == "❗未知来源文章" or biz in checkDict:
+                            print(f"❗❗❗发现检测文章--- {biz}", flush=True)
+                            if token == "000":
+                                config_ret = os.system("source /ql/config/config.sh")
+                                if config_ret != 0:
+                                    print("⚠️ 错误：加载配置文件失败！")
+                                else:
+                                    notify_cmd = f'notify "⚠️ 小阅阅检测文章！请在120s内完成阅读！" \'<a href="\n{link}\n"target="_blank">👉点击阅读8s以上并返回\n{link}\n\''
+                                    notify_ret = os.system(notify_cmd)
+                                    if notify_ret == 0:
+                                        print("❗❗❗检测文章已推送至微信，请到微信完成阅读…\n🕗120s后继续运行…", flush=True)
+                                    else:
+                                        print(f"❌ 通知发送失败，错误码: {notify_ret}")
+                            else:
+                                url = "http://www.pushplus.plus/send"
+                                data = {
+                                    "token": token,
+                                    "title": "⚠️ 小阅阅检测文章！请在120s内完成阅读！",
+                                    "content": f'<a href="\n{link}\n"target="_blank">👉点击阅读8s以上并返回\n{link}\n',  
+                                    "template": "html"
+                                }
+                                for attempt in range(max_retries):
+                                    try:
+                                        response = requests.post(url, data=data).json()
+                                        if response.get("code") == 200:
+                                            print("❗❗❗检测文章已推送至微信，请到微信完成阅读…\n🕗120s后继续运行…", flush=True)
+                                            break
+                                        else:
+                                            print(f"❗❗❗检测文章推送失败", flush=True)
+                                    except Exception as e:
+                                        print(f"❗❗❗推送请求异常：{str(e)}", flush=True)
+                                        response = None
+                                    if attempt < max_retries - 1 and (not response or response.get("code") != 200):
+                                        print("❗❗❗正在尝试重新推送...", flush=True)
+                                        time.sleep(3.5)
+                                    else:
+                                        print(f"❗❗❗推送失败原因：{response.get('msg')}", flush=True)
+                                        exit()
+                            time.sleep(delay)
+                            url = f"{url_parts.scheme}://{url_parts.netloc}/jinbicp?gt={gt}&time={sleep}&timestamp={current_timestamp}"
+                            headers = {
+                                "Host": f"{url_parts.netloc}",
+                                "Connection": "keep-alive",
+                                "User-Agent": f"{UA} {uas}",
+                                "Accept": "application/json, text/javascript, */*; q=0.01",
+                                "X-Requested-With": "XMLHttpRequest",
+                                "Referer": f"{url_parts.scheme}://{url_parts.netloc}/xsysy.html?{url_parts.query}",
+                                "Accept-Encoding": "gzip, deflate",
+                                "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"
+                            }
+                            for retry in range(max_retries):
+                                try:
+                                    response = requests.get(url, headers=headers, timeout=7).json()
+                                    break
+                                except (ConnectionError, Timeout):
+                                    if retry < max_retries - 1:
+                                        time.sleep(2.5) 
+                                        continue
+                                    else:
+                                        print("❗网络异常退出", flush=True)
+                                        break
+                                except Exception as e:
+                                    print('❗提交状态异常', flush=True)
+                                    print(e)
+                            if response["errcode"] == 0:
+                                gold = response['data']['gold']
+                                print(f"✅ 第{i + 1}次阅读检测文章成功---获得金币:💰{gold}💰", flush=True)
+                                print(f"{'-' * 60}\n")
+                            else:
+                                print(f"❗❗❗过检测失败\n{response}", flush=True)
+                                break
+                        else:
+                            time.sleep(sleep)
+                            url = f"{url_parts.scheme}://{url_parts.netloc}/jinbicp?gt={gt}&time={sleep}&timestamp={current_timestamp}"
+                            headers = {
+                                "Host": f"{url_parts.netloc}",
+                                "Connection": "keep-alive",
+                                "User-Agent": f"{UA} {uas}",
+                                "Accept": "application/json, text/javascript, */*; q=0.01",
+                                "X-Requested-With": "XMLHttpRequest",
+                                "Referer": f"{url_parts.scheme}://{url_parts.netloc}/xsysy.html?{url_parts.query}",
+                                "Accept-Encoding": "gzip, deflate",
+                                "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"
+                            }
+                            for retry in range(max_retries):
+                                try:
+                                    response = requests.get(url, headers=headers, timeout=7).json()
+                                    break
+                                except (ConnectionError, Timeout):
+                                    if retry < max_retries - 1:
+                                        time.sleep(2.5)
+                                        continue
+                                    else:
+                                        print("❗网络异常退出", flush=True)
+                                        break
+                                except Exception as e:
+                                    print("❗提交状态异常", flush=True)
+                                    print(e)
+                            if response["errcode"] == 0:
+                                gold = response["data"]["gold"]
+                                print(f"📖 本次模拟阅读{sleep}秒", flush=True)
+                                print(f"✅ 第{i + 1}次阅读成功---获得金币:💰{gold}💰", flush=True)
+                                print(f"{'-' * 60}\n")
+                            else:
+                                print(f"❗阅读文章失败，请尝试重新运行\n{response}", flush=True)
+                                break
+                    else:
+                        print("❗未找到link")
+                elif response["errcode"] == 405:
+                    print(f"❗{response}", flush=True)
+                    print(f"❗请尝试重新运行", flush=True)
+                    break
+                elif response["errcode"] == 407:
+                    if '<br />1、' in response["msg"]:
+                        first_part = response["msg"].split('<br />1、', 1)[0]
+                        first_rule = response["msg"].split('<br />1、', 1)[1].split('<br />')[0].strip()
+                        print(f"❗{first_part}", flush=True)
+                        print(f"❗{first_rule}", flush=True)
+                        break
+                    else:
+                        print(f"❗{response['msg']}", flush=True)
+                        break
+                else:
+                    print(f"⚠️ 未知错误 {response['errcode']}: {response}", flush=True)
+                    break
+            else:
+                print(f"❗获取文章失败{response}", flush=True)
+                break
+        # 提现
+        if money_Withdrawal == 1:
+            if int(last_gold) > 5000:
+                print(f"{'=' * 12}💰开始提现💰{'=' * 12}\n", flush=True)
+                url = f"http://{parsed_domain}"
+                headers = {
+                    "Host": f"{parsed_domain}",
+                    "Connection": "keep-alive",
+                    "Cache-Control": "max-age=0",
+                    "Upgrade-Insecure-Requests": "1",
+                    "User-Agent": f"{UA} {uas}",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/wxpic,image/tpg,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+                    "X-Requested-With": "com.tencent.mm",
+                    "Accept-Encoding": "gzip, deflate",
+                    "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cookie": f"ysmuid={ysmuid}"
+                }
+                response = requests.get(url, headers=headers).text
+                res1 = re.sub('\s', '', response)
+                exchangeUrl = re.findall('"target="_blank"href="(.*?)">提现<', res1)
+                eurl = exchangeUrl[0]
+                query_dict = parse_qs(urlparse(exchangeUrl[0]).query)
+                unionids = query_dict.get('unionid', [''])[0]
+                request_id = query_dict.get('request_id', [''])[0]
+                b = urlparse(eurl)
+                host=b.netloc
+                url = f"http://{host}/yunonline/v1/gold"
+                headers = {
+                    "Host": f"{host}",
+                    "Connection": "keep-alive",
+                    "User-Agent": f"{UA} {uas}",
+                    "Accept": "application/json, text/javascript, */*; q=0.01",
+                    "X-Requested-With": "XMLHttpRequest",
+                    "Referer": f"{eurl}",
+                    "Accept-Encoding": "gzip, deflate",
+                    "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cookie": f"ysmuid={ysmuid}; ejectCode=1"
+                }
+                params = {
+                    "unionid": f"{unionid}",
+                    "time": int(time.time() * 1000)
+                }
+                response = requests.get(url, headers=headers, params=params).json()
+                if response["errcode"] == 0:
+                    last_gold = response["data"]["last_gold"]
+                    gold = int(int(last_gold) / 1000) * 1000
+                url = f"http://{host}/yunonline/v1/user_gold"
+                headers = {
+                    "Host": f"{host}",
+                    "Accept": "application/json, text/javascript, */*; q=0.01",
+                    "X-Requested-With": "XMLHttpRequest",
+                    "User-Agent": f"{UA} {uas}",
+                    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+                    "Origin": f"http://{host}",
+                    "Referer": f"{eurl}",
+                    "Accept-Encoding": "gzip, deflate",
+                    "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cookie": f"ysmuid={ysmuid}"
+                }
+                data = {
+                    "unionid": unionids,
+                    "request_id": request_id,
+                    "gold": gold,
+                }
+                response = requests.post(url, headers=headers, data=data).json()
+                print(f"💰 当前可提现:{gold}", flush=True)
+                url = f"http://{host}/yunonline/v1/withdraw"
+                headers = {
+                    "Host": f"{host}",
+                    "Connection": "keep-alive",
+                    "Accept": "application/json, text/javascript, */*; q=0.01",
+                    "X-Requested-With": "XMLHttpRequest",
+                    "User-Agent": f"{UA} {uas}",
+                    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+                    "Origin": f"http://{host}",
+                    "Referer": f"{eurl}",
+                    "Accept-Encoding": "gzip, deflate",
+                    "Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+                    "Cookie": f"ysmuid={ysmuid}"
+                }
+                data = {
+                    "unionid": unionids,
+                    "signid": request_id,
+                    "ua": "2",
+                    "ptype": "0",
+                    "paccount": "",
+                    "pname": ""
+                }
+                response = requests.post(url, headers=headers, data=data)
+                data = response.json()
+                if data["errcode"] == 0:
+                    print("💰 恭喜您，提现成功！\n", flush=True)
+                else:
+                    print(f"❗{response}", flush=True)
+            else:
+                print(f"{'=' * 17}{'=' * 17}", flush=True)
+                print("🔔 金币不足5000，不执行提现\n", flush=True)
+        elif money_Withdrawal == 0:
+            print(f"{'=' * 17}{'=' * 17}", flush=True)
+            print(f"🔔 自动提现已关闭，不执行提现\n", flush=True)
+    else:
+        print(f"❗获取用户信息失败", flush=True)
+        exit()
+
+
+def notice():
     try:
-     print(O00OO0O0O000OO00O['data']['description'])
-    except:
-     print(O00OO0O0O000OO00O)
-  OO00000OO0OOOOOO0=random.uniform(3,5)
-  print(f"随机延迟:{OO00000OO0OOOOOO0}秒")
-  time.sleep(OO00000OO0OOOOOO0)
- print("抽奖结束")
-def print_ascii_art():
- print("// ┏┓   ┏┓")
- print("// ┏┛┻━━━┛┻┓")
- print("// ┃       ┃")
- print("// ┃   ━   ┃")
- print("// ┃ ┳┛ ┗┳ ┃")
- print("// ┃       ┃")
- print("// ┃   ┻   ┃")
- print("// ┃       ┃")
- print("// ┗━┓   ┏━┛")
- print("// ┃   ┃ 分享群：")
- print("// ┃   ┃ 826307062")
- print("// ┃   ┗━━━┓")
- print("// ┃       ┣┓")
- print("// ┃       ┏┛")
- print("// ┗┓┓┏━┳┓┏┛")
- print("// ┃┫┫ ┃┫┫")
- print("// ┗┻┛ ┗┻┛")
-if __name__=="__main__":
- print_ascii_art()
- url=r'https://app.eyh.cn/gateway/api'
- raw_token=os.environ.get('Look_at_Yuhang')
- if comment==1:
-  print("开启评论任务")
- else:
-  print("不做评论任务")
- if raw_token:
-  delimiter="&"
-  if delimiter not in raw_token:
-   delimiter="\n"
-  token_list=raw_token.split(delimiter)
-  print(f"共找到{len(token_list)}个账号")
-  for index,token in enumerate(token_list):
-   print(f"当前执行第{index+1}个账号")
-   articleId=get_task_list(token)
-   for i in articleId:
-    print(i)
-    complete_read_task(i,token)
-    sleep_random=random.uniform(3,5)
-    print(f"随机延迟:{sleep_random}秒")
-    time.sleep(sleep_random)
-    complete_like_task(i,token)
-    sleep_random=random.uniform(3,5)
-    print(f"随机延迟:{sleep_random}秒")
-    time.sleep(sleep_random)
-    complete_share_task(i,token)
-    sleep_random=random.uniform(3,5)
-    print(f"随机延迟:{sleep_random}秒")
-    time.sleep(sleep_random)
-    if comment==1:
-     complete_comment_task(i,token)
-     complete_like_task(i,token)
-     sleep_random=random.uniform(3,5)
-     print(f"随机延迟:{sleep_random}秒")
-     time.sleep(sleep_random)
-   print("任务完成，准备抽奖"+"\n")
-   lottery_draw(token)
-   sleep_random=random.uniform(10,30)
-   print(f"随机延迟:{sleep_random}秒")
-   time.sleep(sleep_random)
- else:
-  print("\n"+"没找到数据，请检查是否设置<Look_at_Yuhang>变量与值"+"\n")
+        print(requests.get("https://gitee.com/gngkj/wxyd/raw/master/label.txt", timeout=5).text)
+    except requests.RequestException as e:
+        print(f"❗网络异常，获取通知时出错: {e}")
+
+
+if __name__ == "__main__":
+    notice()
+    accounts = os.getenv("xyy")
+    money_Withdrawal = 0 if os.getenv("xyytx", "0") == "0" else 1
+    UA = os.getenv("UA"); None if UA is not None else (print("❗未找到变量UA", flush=True), exit())
+    if accounts is None: print("❗未找到变量xyy", flush=True); exit()
+    else:
+        accounts_list = accounts.split("@")
+        num_of_accounts = len(accounts_list)
+        print(f"\n获取到 {num_of_accounts} 个账号", flush=True)
+        for i, account in enumerate(accounts_list, start=1):
+            process_account(account, i)
